@@ -38,7 +38,15 @@ function drawCircl(x=10,y=10){
 }
 //多くを再描画
 function manyRedraw(){
-  for(let x = 1; x < 300; x++){
-    drawCircl(x,x)
+  for(let i = 1; i < 300; i++){
+    let x = getRandomInt(10,400);
+    let y = getRandomInt(10,400);
+    drawCircl(x,y)
   }
+}
+//ランダムな整数を得る
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; 
 }
