@@ -19,8 +19,8 @@ function drawCircl(x=10,y=10){
   const context = canvas.getContext( "2d" ) ;
   // パスをリセット
   context.beginPath () ;
-  // 円の中心座標: (100,100)
-  // 半径: 50
+  // 円の中心座標: (x,y)
+  // 半径: 10
   // 開始角度: 0度 (0 * Math.PI / 180)
   // 終了角度: 360度 (360 * Math.PI / 180)
   // 方向: true=反時計回りの円、false=時計回りの円
